@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>智能报表</title>
+</head>
+<style>
+table td.td1{
+	width:191px;
+	text-align:left;
+	padding-left:20px;
+}
+table td.td2{
+	width:332px;
+	text-align:left;
+	padding-left:20px;
+}
+table tr{
+	height:48px;
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	color: rgba(0,0,0,0.80);
+	line-height: 48px;
+}
+table tr.topic{
+	font-family: PingFangSC-Semibold;
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 20px;
+}
+table td.header{
+	height:48px;
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	color: rgba(0,0,0,0.40);
+	line-height: 48px;
+	text-align:left;
+	padding-left:20px;
+}
+table tr:nth-child(even) {
+	background: #F7F7F7;
+}
+table th{
+	text-align:left;
+	padding-left:20px;
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	color: rgba(0,0,0,0.80);
+}
+</style>
+
+<body>
+<div align="center">
+<span th:text="${currentDate}"></span>
+<span th:text="${name}"></span>  
+</div>
+</body>
+</html>
